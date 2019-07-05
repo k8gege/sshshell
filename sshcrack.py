@@ -13,8 +13,6 @@ def checkSSH(host,port,user,pwd):
 	try:
 		ssh.connect(host,port,user,pwd)
 		print host+' '+port+' '+user+' '+pwd+' LoginOK'
-		checkDns()
-		checkPing()
 	except:
 		pass
 host=sys.argv[1]
